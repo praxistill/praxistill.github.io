@@ -11,4 +11,7 @@ plugins:
     - jekyll-seo-tag
 
 styling:
-    primary-color: '#00a080'
+    primary-color: '#00a087'
+    text:
+        color: '#2e2e2e'
+
