@@ -1,0 +1,128 @@
+/* `XHTML, HTML4, HTML5 Reset
+----------------------------------------------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Signika:600|Varela+Round);
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, main, mark, menu, meter, nav, object, ol, output, p, pre, progress, q, rp, rt, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video, xmp { border: 0; margin: 0; padding: 0; font-size: 100%; }
+
+html, body { height: 100%; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section { /* Override the default (display: inline) for browsers that do not recognize HTML5 tags. IE8 (and lower) requires a shiv: http://ejohn.org/blog/html5-shiv */ display: block; }
+
+b, strong { /* Makes browsers agree. IE + Opera = font-weight: bold. Gecko + WebKit = font-weight: bolder. */ font-weight: bold; }
+
+img { color: transparent; font-size: 0; vertical-align: middle; /* For IE. http://css-tricks.com/ie-fix-bicubic-scaling-for-images */ -ms-interpolation-mode: bicubic; }
+
+ol, ul { list-style: none; }
+
+li { /* For IE6 + IE7: "display: list-item" keeps bullets from disappearing if hasLayout is triggered. */ display: list-item; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+th, td, caption { font-weight: normal; vertical-align: top; text-align: left; }
+
+q { quotes: none; }
+
+q:before, q:after { content: ""; content: none; }
+
+sub, sup, small { font-size: 75%; }
+
+sub, sup { line-height: 0; position: relative; vertical-align: baseline; }
+
+sub { bottom: -0.25em; }
+
+sup { top: -0.5em; }
+
+svg { /* For IE9. Without, occasionally draws shapes outside the boundaries of <svg> rectangle. */ overflow: hidden; }
+
+/* 960 Grid System ~ Text CSS. Learn more ~ http://960.gs/ Licensed under GPL and MIT. */
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+body { font: normal 0.8em/1.5 "Varela Round", sans-serif; color: #2e2e2e; /*font: 13px/1.5 "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;*/ }
+
+pre, code { font-family: "DejaVu Sans Mono", Menlo, Consolas, monospace; }
+
+/*hr { border: 0 solid #ccc; border-top-width: 1px; clear: both; height: 0; }*/
+p { font-size: 0.5em; line-height: 1.2em; }
+
+/* `Headings
+----------------------------------------------------------------------------------------------------*/
+h1 { font-size: 2em; line-height: 2.34em; }
+
+h2 { font-size: 1.5em; line-height: 1.74em; }
+
+h3 { font-size: 1.17em; line-height: 1.41em; }
+
+h4 { font-size: 1em; line-height: 1.2em; }
+
+/* `Spacing
+----------------------------------------------------------------------------------------------------*/
+ol { list-style: decimal; }
+
+ul { list-style: disc; }
+
+:root { --info-box-width: 25em; --info-box-body-height: 25em; --info-box-body-font-size: 1.3em; --info-box-header-height: 5em; --info-box-header-font-size: 1.8em; }
+
+h1, h2 { font-family: "Signika", sans-serif; font-weight: 600; }
+
+h1 { color: #e0e0e0; }
+
+a:link, a:visited, a:hover, a:active { text-decoration: none; }
+
+body { background: url(../img/background-transparent.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+
+.page { height: 100%; display: grid; grid-template-columns: 24% auto 24%; grid-template-rows: 15% auto auto; grid-template-areas: "header-left header-nav header-right" ". central ." ". footer ."; }
+
+.header-nav { grid-area: header-nav; }
+
+.header-left { grid-area: header-left; }
+
+.header-right { grid-area: header-right; }
+
+.central { grid-area: central; }
+
+.footer { grid-area: footer; }
+
+nav ul { display: block; list-style-type: none; margin: 0; padding: 0; }
+
+nav li { display: inline; }
+
+.header { display: grid; grid-template-columns: 24% auto 24%; grid-template-areas: "header-left header-nav header-right"; }
+
+.fixed-nav-bar { z-index: 9999; width: 100%; height: 2em; /*background-color: rgba(0,160,135)#00a087;*/ background-color: #00a087; }
+
+.fixed-nav-bar { box-shadow: 0px 3px 3px -3px rgba(50, 50, 50, 0.6); }
+
+.header-left { z-index: 9999; width: 100%; height: 2em; background-color: #00a087; box-shadow: 0px 3px 3px -3px rgba(50, 50, 50, 0.6); }
+
+.header-right { z-index: 9999; width: 100%; height: 2em; background-color: #00a087; box-shadow: 0px 3px 3px -3px rgba(50, 50, 50, 0.6); }
+
+/* MAIN */
+#info-boxes { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; }
+
+.info-box { margin-top: 5em; -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.03); -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.03); box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.03); }
+
+#mapdiv { width: 100%; height: 100%; }
+
+.info-box-header { margin: 0em 0em 0.5em 0em; padding: 0.5em 0.5em 0.5em 0.5em; width: var(--info-box-width); height: var(--info-box-header-height); background: green; box-sizing: border-box; background: rgba(255, 255, 255, 0.4); /* -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.03); -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.03); box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.03); */ }
+
+.info-box-body { margin: 0em 0em 0em 0em; height: var(--info-box-body-height); width: var(--info-box-width); padding: 0.5em 0.5em 0.5em 0.5em; box-sizing: border-box; background: rgba(255, 255, 255, 0.4); /* -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.03); -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.03); box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.03); */ }
+
+#info-box-map { padding: 0em 0em 0em 0em; }
+
+.info-body-content { height: 100%; font-size: var(--info-box-body-font-size); /*background: yellow;*/ }
+
+.info-header-content { text-align: center; font-size: var(--info-box-header-font-size); /*background: yellow;*/ }
+
+/* INFO TABLE */
+.info-table { width: 100%; height: 100%; display: flex; flex-direction: column; }
+
+.info-table-body { flex-grow: 1; display: flex; flex-direction: column; justify-content: space-evenly; }
+
+.info-entry { display: flex; flex-direction: column; }
+
+.info-key { align-self: flex-start; }
+
+.info-key::after { content: ":"; }
+
+.info-value { align-self: flex-end; }
+
+/*# sourceMappingURL=main.css.map */

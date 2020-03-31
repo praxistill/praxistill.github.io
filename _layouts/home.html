@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "de" }}">
+  {%- include head.html -%}
+<body>
+  <div class="page">
+  
+    {%- include header.html -%}
+  
+    {%- include central.html -%}
+  
+    {%- include footer.html -%}
+    
+  </div> <!-- closing page-->
+</body>
+
+<script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+<script>
+    map = new OpenLayers.Map("mapdiv");
+    map.addLayer(new OpenLayers.Layer.OSM());
+    var lonLat = new OpenLayers.LonLat( 9.692085, 52.374766 )
+          .transform(
+            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+            map.getProjectionObject() // to Spherical Mercator Projection
+          );
+          
+    var zoom=15;
+
+    map.layers[0].attribution="";
+
+    var markers = new OpenLayers.Layer.Markers( "Markers" );
+    map.addLayer(markers);
+    
+    markers.addMarker(new OpenLayers.Marker(lonLat));
+    
+    map.setCenter (lonLat, zoom);
+</script>
+
+</html>

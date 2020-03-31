@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Arztpraxis Hermes | Die Homepage der Arztpraxis Hermes.</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Arztpraxis Hermes" />
+<meta name="author" content="Jan Hermes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Die Homepage der Arztpraxis Hermes." />
+<meta property="og:description" content="Die Homepage der Arztpraxis Hermes." />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Arztpraxis Hermes" />
+<script type="application/ld+json">
+{"@type":"WebSite","author":{"@type":"Person","name":"Jan Hermes"},"headline":"Arztpraxis Hermes","description":"Die Homepage der Arztpraxis Hermes.","name":"Arztpraxis Hermes","url":"http://localhost:4000/","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Arztpraxis Hermes" /><link rel="shortcut icon" href="/assets/img/favicon.ico">
+</head>
+<body>
+  <div class="page"><div class="header-left"></div>
+<header class="header-nav">
+  	<nav class="fixed-nav-bar">
+  		<div id="menu" class="menu">
+  		<a class="sitename" href="index.html">Arztpraxis Hermes</a>
+  		<!-- responsive navigation menu  -->
+  		<!--a class="show" href="#menu">Menü</a><a class="hide" href="#hidemenu">Menu</a>
+  		<ul class="menu-items">
+  		  <li><a href="index.html">Home</a></li>
+  		  <li><a href="http://www.openstreetmap.org/directions?to=Zimmermannstr%2011%2F13%2C%2030453#map=19/52.37456/9.69235&layers=N">Anfahrt</a></li>
+  		</ul-->
+      </div> <!-- closing menu -->
+  	</nav>
+</header>
+<div class="header-right"></div>
+<div class="central">
+  <div id="info-boxes" class="content">
+    <div id="left-box" class="info-box">
+      <div class="info-box-header">
+        <div class="info-header-content">
+          <h3>Sprechzeiten</h3>
+        </div>
+      </div> <!-- closing info-box-header -->
+      <div class="info-box-body">
+        <div class="info-body-content">
+          <table class="info-table">
+            <tbody class="info-table-body">
+              <tr class="info-entry">
+                <td class="info-key">Montag bis Freitag</td>
+                <td class="info-value">8:45 bis 12:15 Uhr</td>
+              </tr>
+              <tr class="info-entry">
+                <td class="info-key">Montags und Donnerstags</td>
+                <td class="info-value">14:45 bis 18:00 Uhr</td>
+              </tr>
+              <tr class="info-entry">
+                <td class="info-value">Zusätzlich nach Vereinbarung</td>
+              </tr>
+            <tbody> 
+          </table>
+        </div>
+      </div>
+    </div> <!-- closing info-box -->
+    <div id="middle-box" class="info-box">
+      <div class="info-box-header">
+        <div class="info-header-content">
+          <h3>Kontakt</h3>
+        </div>
+      </div>
+      <div class="info-box-body">
+        <div class="info-body-content">
+          <table class="info-table">
+            <tbody class="info-table-body">
+              <tr class="info-entry">
+                <td class="info-key">Telefon</td>
+                <td class="info-value">0511 / 928 60 76</td>
+              </tr>
+              <tr class="info-entry">
+                <td class="info-key">Telefax</td>
+                <td class="info-value">0511 / 928 60 99</td>
+              </tr>
+              <tr class="info-entry">
+                <td class="info-key">Adresse</td>
+                <td class="info-value">Zimmermannstr. 11/13<br>30453 Hannover</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div> <!-- closing info-box -->
+    <div id="right-box" class="info-box">
+      <div class="info-box-header">
+        <div class="info-header-content">
+          <h3>Anfahrt</h3>
+        </div>
+      </div>
+      <div class="info-box-body" id="info-box-map">
+
+          <div id="mapdiv" class="map-box"></div>
+        
+      </div>
+    </div> <!-- closing info-box -->
+  </div> <!-- closing info-boxes -->
+</div> <!-- closing main -->
+<footer class="footer">
+  <nav class="fixed-footer">
+  <div class="footer-menu">
+    <ul>
+      <li><a href="impressum.html">impressum</a></li>
+      <li><a href="datenschutz.html">datenschutz</a></li>
+      <!--li><a href="absichtserklaerung.html">nutzungsbedingungen</a></li-->
+    </ul>
+  </div> <!-- closing footer menu -->
+  </nav>
+</footer>
+
+</div> <!-- closing page-->
+</body>
+
+<script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+<script>
+    map = new OpenLayers.Map("mapdiv");
+    map.addLayer(new OpenLayers.Layer.OSM());
+    var lonLat = new OpenLayers.LonLat( 9.692085, 52.374766 )
+          .transform(
+            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+            map.getProjectionObject() // to Spherical Mercator Projection
+          );
+          
+    var zoom=15;
+
+    map.layers[0].attribution="";
+
+    var markers = new OpenLayers.Layer.Markers( "Markers" );
+    map.addLayer(markers);
+    
+    markers.addMarker(new OpenLayers.Marker(lonLat));
+    
+    map.setCenter (lonLat, zoom);
+</script>
+
+</html>

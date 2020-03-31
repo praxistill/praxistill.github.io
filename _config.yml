@@ -1,0 +1,11 @@
+url: "https://arztpraxis-hermes.de" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site
+title: "Arztpraxis Hermes" # the name of your site
+author:
+    name: Jan Hermes
+description: > # '>' means to ignore newlines until the next element
+    Die Homepage der Arztpraxis Hermes.
+
+plugins:
+    - jekyll-feed
+    - jekyll-seo-tag
