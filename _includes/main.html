@@ -5,16 +5,16 @@
       <div class="info-box">
         <div class="info-box-header">
           <div class="info-header-content">
-            <h3>{{ info_box.title }}</h3>
+            <h3>{{ info_box[0] }}</h3>
           </div>
         </div> <!-- closing info-box-header -->
 
-        {% if info_box.class == "info-table" %}
+        {% if info_box[1].class == "info-table" %}
           <div class="info-box-body">
               <div class="info-body-content">
                 <table class="info-table">
                   <tbody class="info-table-body">
-                    {% for info_entry in info_box.info-entries %}
+                    {% for info_entry in info_box[1].info-entries %}
                       <tr class="info-entry">
                         {% if info_entry[0] != "" %}
                           <td class="info-key">{{ info_entry[0] }}</td>
@@ -28,7 +28,7 @@
                 </table>
               </div> <!-- closing info-body-content -->
           </div> <!-- closing info-box-body -->
-        {% elsif info_box.class == "map" %}
+        {% elsif info_box[1].class == "map" %}
           <div class="info-box-body" id="info-box-map">
 
             <div id="mapdiv" class="map-box"></div>
