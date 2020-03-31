@@ -1,9 +1,9 @@
 <div class="main">
   <div id="info-boxes" class="content">
 
-    {% for info_box in page.info-boxes %}
-    {% assign info_box_title = info_box[0] %}
-    {% assign info_box = info_box[1] %}
+    {% for info_box_entry in page.info-boxes %}
+    {% assign info_box_title = info_box_entry[0] %}
+    {% assign info_box = info_box_entry[1] %}
       <div class="info-box">
         <div class="info-box-header">
           <div class="info-header-content">
@@ -32,7 +32,7 @@
                 </table>
               </div> <!-- closing info-body-content -->
           </div> <!-- closing info-box-body -->
-        {% elsif info_box[1].class == "map" %}
+        {% elsif info_box.class == "map" %}
           <div class="info-box-body" id="info-box-map">
 
             <div id="mapdiv" class="map-box"></div>
