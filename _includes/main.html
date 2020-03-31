@@ -2,25 +2,29 @@
   <div id="info-boxes" class="content">
 
     {% for info_box in page.info-boxes %}
+    {% assign info_box_title = info_box[0] %}
+    {% assing info_box = info_box[1] %}
       <div class="info-box">
         <div class="info-box-header">
           <div class="info-header-content">
-            <h3>{{ info_box[0] }}</h3>
+            <h3>{{ info_box_title }}</h3>
           </div>
         </div> <!-- closing info-box-header -->
 
-        {% if info_box[1].class == "info-table" %}
+        {% if info_box.class == "info-table" %}
           <div class="info-box-body">
               <div class="info-body-content">
                 <table class="info-table">
                   <tbody class="info-table-body">
-                    {% for info_entry in info_box[1].info-entries %}
+                    {% for info_entry in info_box.info-entries %}
                       <tr class="info-entry">
-                        {% if info_entry[0] != "" %}
-                          <td class="info-key">{{ info_entry[0] }}</td>
+                        {% assign key = info_entry[0] %}
+                        {% assign value = info_entry[1] %}
+                        {% if key != "" %}
+                          <td class="info-key">{{ key }}</td>
                         {% endif %}
-                        {% if info_entry[1] != "" %}
-                          <td class="info-value">{{ info_entry[1] }}</td>
+                        {% if value != "" %}
+                          <td class="info-value">{{ value }}</td>
                         {% endif %}
                       </tr>
                     {% endfor %}
