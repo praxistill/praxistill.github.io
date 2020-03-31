@@ -1,0 +1,18 @@
+.header {
+	display: grid;
+	grid-template-columns: 24% auto 24%;
+	grid-template-areas:
+		"header-left header-nav header-right";
+}
+
+.header-nav{
+	grid-area: header-nav;
+}
+
+.header-left {
+	grid-area: header-left;
+}
+
+.header-right {
+	grid-area: header-right;
+}

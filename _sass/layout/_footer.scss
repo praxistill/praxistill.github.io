@@ -1,0 +1,21 @@
+.footer {
+
+	display: grid;
+	grid-template-columns: 24% auto 24%;
+	grid-template-areas:
+		"footer-left footer-nav footer-right";
+}
+
+.footer-nav{
+	grid-area: footer-nav;
+}
+
+.footer-left {
+	grid-area: footer-left;
+}
+
+.footer-right {
+	grid-area: footer-right;
+}
+
+

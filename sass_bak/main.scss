@@ -1,0 +1,67 @@
+@import 'reset';
+@import 'text';
+
+// @import 'colors';
+
+@import 'layout';
+@import 'styling';
+
+:root {
+
+	--info-box-width: 25em;
+	
+	--info-box-body-height: 25em;
+	--info-box-body-font-size: 1.3em;
+	
+	--info-box-header-height: 5em;
+	--info-box-header-font-size: 1.8em;
+}
+
+h1, h2 {
+  font-family: "Signika", sans-serif;
+  font-weight: 600;
+}
+h1 {
+  color: #e0e0e0;
+}
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+body {
+  background: url(../img/background-transparent.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.page {
+	height: 100%;
+	display: grid;
+	grid-template-columns: 24% auto 24%;
+	grid-template-rows: 5% 15% auto auto 5%;
+	grid-template-areas:
+		"header header header"
+		". . ."
+		". central ."
+		". . ."
+		"footer footer footer";
+}
+
+.header {
+	grid-area: header;
+}
+
+.central {
+	grid-area: central;
+}
+
+.footer {
+	grid-area: footer;
+}
+
+@import 'navigation';
+@import 'header';
+@import 'central';
+@import 'footer';

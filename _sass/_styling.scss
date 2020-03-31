@@ -1,11 +1,24 @@
-@import 'colors';
+@import 'styling/colors';
 
-%bar-styling {
-	z-index: 9999;
+body {
+  background: url(../img/background-transparent.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-%header-bar-styling {
-	@extend %bar-styling;
-	background-color: $primary-color;
-	box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.6);
+h1, h2 {
+  font-family: "Signika", sans-serif;
+  font-weight: 600;
 }
+h1 {
+  color: #e0e0e0;
+}
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+@import 'styling/header';
+@import 'styling/main';
+@import 'styling/footer';

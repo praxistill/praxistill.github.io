@@ -9,3 +9,6 @@ description: > # '>' means to ignore newlines until the next element
 plugins:
     - jekyll-feed
     - jekyll-seo-tag
+
+styling:
+    primary-color: '#00a080'

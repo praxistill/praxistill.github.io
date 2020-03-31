@@ -1,0 +1,40 @@
+:root {
+
+	--info-box-width: 25em;
+	
+	--info-box-body-height: 25em;
+	--info-box-body-font-size: 1.3em;
+	
+	--info-box-header-height: 5em;
+	--info-box-header-font-size: 1.8em;
+}
+
+.page {
+	height: 100%;
+	display: grid;
+	grid-template-columns: 24% auto 24%;
+	grid-template-rows: 5% 15% auto auto 5%;
+	grid-template-areas:
+		"header header header"
+		". . ."
+		". main ."
+		". . ."
+		"footer footer footer";
+}
+
+.header {
+	grid-area: header;
+}
+
+.main {
+	grid-area: main;
+}
+
+.footer {
+	grid-area: footer;
+}
+
+@import 'layout/navigation';
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';

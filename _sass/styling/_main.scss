@@ -1,0 +1,30 @@
+/* MAIN */
+
+.info-box {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.03);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.03);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.03);
+}
+
+.info-box-header {
+    background: rgba(255,255,255,0.4);
+}
+
+.info-box-body {
+    background: rgba(255,255,255,0.4);
+}
+
+.info-body-content {
+	font-size: var(--info-box-body-font-size);
+}
+
+.info-header-content {
+	text-align: center;
+	font-size: var(--info-box-header-font-size);
+}
+
+/* INFO TABLE */
+
+.info-key::after {
+	content: ":";
+}
