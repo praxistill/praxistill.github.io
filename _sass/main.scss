@@ -1,6 +1,9 @@
 @import 'reset';
 @import 'text';
 
+@import 'colors';
+@import 'styling';
+
 :root {
 
 	--info-box-width: 25em;
@@ -35,23 +38,17 @@ body {
 	height: 100%;
 	display: grid;
 	grid-template-columns: 24% auto 24%;
-	grid-template-rows: 15% auto auto;
+	grid-template-rows: 5% 15% auto auto 5%;
 	grid-template-areas:
-		"header-left header-nav header-right"
+		"header header header"
+		". . ."
 		". central ."
-		". footer .";
+		". . ."
+		"footer footer footer";
 }
 
-.header-nav{
-	grid-area: header-nav;
-}
-
-.header-left {
-	grid-area: header-left;
-}
-
-.header-right {
-	grid-area: header-right;
+.header {
+	grid-area: header;
 }
 
 .central {
