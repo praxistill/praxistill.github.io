@@ -1,10 +1,19 @@
 /* MAIN */
 
+.main {
+	// display: grid;
+}
+
 #info-boxes {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
+
+	// display: grid;
+	// grid-template-columns: repeat(auto-fit, minmax(20em, auto));
+	// justify-content: space-around;
+	// grid-gap: normal;
 }
 
 .info-box {
