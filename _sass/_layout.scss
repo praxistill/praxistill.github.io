@@ -13,7 +13,7 @@
 	height: 100%;
 	display: grid;
 	grid-template-columns: 22% auto 22%;
-	grid-template-rows: auto 15% 70% auto 5%;
+	grid-template-rows: auto 15% auto auto 5%;
 	grid-template-areas:
 		"header header header"
 		". . ."
@@ -21,6 +21,31 @@
 		". . ."
 		"footer footer footer";
 }
+
+@media only screen and (max-aspect-ratio: 1/1) {
+
+	.page {
+		grid-template-columns: 5% auto 5%;
+	}
+}
+
+@media only screen and (min-aspect-ratio: 4/3) {
+
+	.page {
+		grid-template-columns: 15% auto 15%;
+	}
+}
+
+// wide view display
+@media only screen and (min-aspect-ratio: 16/9) {
+
+	.page {
+		grid-template-columns: 22% auto 22%;
+	}
+
+}
+
+
 
 .header {
 	grid-area: header;
