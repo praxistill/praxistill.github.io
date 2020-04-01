@@ -7,12 +7,14 @@
 	
 	--info-box-header-height: 5em;
 	--info-box-header-font-size: 1.8em;
+
+	--info-box-padding: 0.8em;
 }
 
 .page {
 	height: 100%;
 	display: grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: auto auto auto; //minmax(min-content, 80%) auto;
 	grid-template-rows: 4em 10em auto auto 10em;
 	grid-template-areas:
 		"header header header"
