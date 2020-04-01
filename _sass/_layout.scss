@@ -12,7 +12,7 @@
 .page {
 	height: 100%;
 	display: grid;
-	grid-template-columns: 20em auto 20em;
+	grid-template-columns: auto auto auto;
 	grid-template-rows: 4em 10em auto auto 10em;
 	grid-template-areas:
 		"header header header"
