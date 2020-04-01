@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Signika:600|Varela+Round);
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+  font-style: font(default, base, style);
+  font-variant: font(default, base, variant);
+  font-weight: font(default, base, weight);
+  font-size: font(default, base, size);
+  line-height: font(default, base, line-height);
+  font-family: font(default, base, family);
+
+  color: color(default, base, text);
+}
+
