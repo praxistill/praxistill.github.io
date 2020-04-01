@@ -12,8 +12,15 @@
 
 body {
 
-  font: normal 0.8em/1.5 "Varela Round", sans-serif;
-  color: #2e2e2e;
+  font-style: font(default, base, style);
+  font-variant: font(default, base, variant);
+  font-weight: font(default, base, weight);
+  font-size: font(default, base, size);
+  line-height: font(default, base, line-height);
+  font-family: font(default, base, family);
+
+  // normal 0.8em/1.5 "Varela Round", sans-serif;
+  color: color(default, base, text);
   /*font: 13px/1.5 "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;*/
 }
 

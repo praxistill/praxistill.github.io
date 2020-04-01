@@ -13,7 +13,28 @@ plugins:
 enabled-footer: false
 
 styling:
-    primary-color: '#00a087'
-    text:
-        color: '#2e2e2e'
-
+    colors:
+        default:
+            base:
+                primary: '#00a087'
+                text: '#2e2e2e'
+            info-block:
+                background-color: "rgba(255, 255, 255, 0.4)"
+                opacity: 1
+    
+    fonts:
+        default: 
+            base:
+                style: normal
+                variant: normal 
+                weight: normal 
+                size: 0.75em 
+                line-height: 1.5em
+                family: "Varela Round, sans-serif"
+            heading-title:
+                size: 1.6em
+                line-height: 1.5em
+            heading-info-block:
+                size: 1.8em
+                line-height: 1.41em
+        

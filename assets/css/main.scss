@@ -1,6 +1,56 @@
 ---
 ---
 
-$primary-color: {{ site.styling.primary-color }};
+@use "sass:map";
+
+
+$default-font-family: {{ site.styling.fonts.default.base.family }};
+
+$colors: (
+
+	default: (
+		base: (
+			primary: {{ site.styling.colors.default.base.primary }},
+			text: {{ site.styling.colors.default.base.text }}
+		),
+		info-block: (
+			background-color: {{ site.styling.colors.default.info-block.background-color }},
+			opacity: {{ site.styling.colors.default.info-block.opacity }}
+		)
+	)
+
+);
+
+
+$fonts: (
+	default: (
+		base: (
+			style: {{ site.styling.fonts.default.base.style }},
+			variant: {{ site.styling.fonts.default.base.variant }},
+			weight: {{ site.styling.fonts.default.base.weight }},
+			size: {{ site.styling.fonts.default.base.size }},
+			line-height: {{ site.styling.fonts.default.base.line-height }},
+			family: $default-font-family
+		),
+		heading-info-block: (
+			size: {{ site.styling.fonts.default.heading-info-block.size }},
+			line-height: {{ site.styling.fonts.default.heading-info-block.line-height }}
+		),
+		heading-title: (
+			size: {{ site.styling.fonts.default.heading-title.size }},
+			line-height: {{ site.styling.fonts.default.heading-title.line-height }}
+		)
+	)
+);
+
+@function color($variant, $selector, $color-name) {
+	@return map-get(map-get(map-get($colors, $variant), $selector), $color-name);
+}
+
+@function font($variant, $selector, $name) {
+	@return map-get(map-get(map-get($fonts, $variant), $selector), $name);
+}
+
+$background-color: color(default, base, primary);
 
 @import "main";

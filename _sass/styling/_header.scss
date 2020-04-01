@@ -4,7 +4,7 @@
 
 %header-styling {
 	@extend %bar-styling;
-	background-color: $primary-color;
+	background-color: color(default, base, primary);
 	box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.6);
 }
 
@@ -13,8 +13,8 @@
 }
 
 .sitename {
-  font-size: 1.6em;
-  // line-height: 2.3em;
+  font-size: font(default, heading-title, size);
+  line-height: font(default, heading-title, line-height);
 
 }
 a.sitename, a:visited.sitename {

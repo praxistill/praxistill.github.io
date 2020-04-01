@@ -7,11 +7,13 @@
 }
 
 .info-box-header {
-    background: rgba(255,255,255,0.4);
+	background-color: color(default, info-block, background-color);
+	opacity: color(default, info-block, opacity);
 }
 
 .info-box-body {
-    background: rgba(255,255,255,0.4);
+	background-color: color(default, info-block, background-color);
+	opacity: color(default, info-block, opacity);
 }
 
 .info-body-content {
@@ -20,7 +22,8 @@
 
 .info-header-content {
 	text-align: center;
-	font-size: var(--info-box-header-font-size);
+	font-size: font(default, heading-info-block, size);
+	line-height: font(default, heading-info-block, line-height);
 }
 
 .copyright {
@@ -28,7 +31,7 @@
 	font-size: 17px;
 }
 .copyright a {
-	color: #00a087;
+	color: color(default, base, primary);
 }
 
 /* INFO TABLE */
