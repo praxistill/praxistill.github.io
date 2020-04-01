@@ -19,6 +19,10 @@
 }
 
 .info-box-header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
 	margin: 0em 0em 0.5em 0em;
 	padding: 0.5em 0.5em 0.5em 0.5em;
 	
