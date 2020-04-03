@@ -26,11 +26,11 @@ info-blocks:
     places:
       praxis:
         label: "Arztpraxis Hermes"
-        direction: "left"
+        direction: "bottom"
         longlat: [52.374766, 9.692086]
       haltestelle:
         label: "Haltestelle Wunstorfer Straße"
-        direction: "right"
+        direction: "top"
         longlat: [52.37539, 9.6951]
         infos:
           - "Stadtbahn 10 (HBF - Ahlem)"
