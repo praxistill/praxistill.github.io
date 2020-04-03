@@ -1,13 +1,13 @@
 /* MAIN */
 
-#info-boxes {
+#info-blocks {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
 }
 
-.info-box {
+.info-block {
 	
 	margin-bottom: 2.5em;
 	margin-top: 2.5em;
@@ -18,36 +18,36 @@
 	height: 100%;
 }
 
-%info-box-layout {
+%info-block-layout {
 
 	box-sizing: border-box;
-	padding: var(--info-box-padding) var(--info-box-padding) var(--info-box-padding) var(--info-box-padding);
-	width: var(--info-box-width);
+	padding: var(--info-block-padding) var(--info-block-padding) var(--info-block-padding) var(--info-block-padding);
+	width: var(--info-block-width);
 }
 
 
-.info-box-header {
+.info-block-header {
 
-	@extend %info-box-layout;
+	@extend %info-block-layout;
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	
 	margin: 0em 0em 0.5em 0em;
-	height: var(--info-box-header-height);
+	height: var(--info-block-header-height);
 
 }
 
-.info-box-body {
+.info-block-body {
 
-	@extend %info-box-layout;
+	@extend %info-block-layout;
 
 	margin: 0em 0em 0em 0em;
-	height: var(--info-box-body-height);
+	height: var(--info-block-body-height);
 }
 
-#info-box-map {
+#info-block-map {
 	padding: 0em 0em 0em 0em;
 }
 

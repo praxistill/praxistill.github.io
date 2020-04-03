@@ -1,22 +1,22 @@
 <div class="main">
-  <div id="info-boxes" class="content">
+  <div id="info-blocks" class="content">
 
-    {% for info_box_entry in page.info-boxes %}
-    {% assign info_box_title = info_box_entry[0] %}
-    {% assign info_box = info_box_entry[1] %}
-      <div class="info-box">
-        <div class="info-box-header">
+    {% for info_block_entry in page.info-blocks %}
+    {% assign info_block_title = info_block_entry[0] %}
+    {% assign info_block = info_block_entry[1] %}
+      <div class="info-block">
+        <div class="info-block-header">
           <div class="info-header-content">
-            <h3>{{ info_box_title }}</h3>
+            <h3>{{ info_block_title }}</h3>
           </div>
-        </div> <!-- closing info-box-header -->
+        </div> <!-- closing info-block-header -->
 
-        {% if info_box.class == "info-table" %}
-          <div class="info-box-body">
+        {% if info_block.class == "info-table" %}
+          <div class="info-block-body">
               <div class="info-body-content">
                 <table class="info-table">
                   <tbody class="info-table-body">
-                    {% for info_entry in info_box.info-entries %}
+                    {% for info_entry in info_block.info-entries %}
                       <tr class="info-entry">
                         {% assign key = info_entry[0] %}
                         {% assign value = info_entry[1] %}
@@ -31,16 +31,73 @@
                   </tbody>
                 </table>
               </div> <!-- closing info-body-content -->
-          </div> <!-- closing info-box-body -->
-        {% elsif info_box.class == "map" %}
-          <div class="info-box-body" id="info-box-map">
+          </div> <!-- closing info-block-body -->
+        {% elsif info_block.class == "map" %}
+          <div class="info-block-body" id="info-block-map">
 
-            <div id="mapdiv" class="map-box"></div>
+            <div id="mapdiv" class="map-block"></div>
             <p class="copyright">&copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors</p>
           </div>
+
+          <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+             integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+             crossorigin=""></script>
+          <script>
+          var mymap = L.map('mapdiv').setView([52.374766, 9.692085], 15.2);
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          'attribution': "", 
+          'useCache': true
+          }).addTo(mymap);
+          
+          // const myCustomColour = '{{ site.styling.colors.default.base.primary }}';
+          // 
+          // const markerHtmlStyles = `
+          //   background-color: ${myCustomColour};
+          //   width: 2rem;
+          //   height: 2rem;
+          //   display: block;
+          //   left: -1.5rem;
+          //   top: -1.5rem;
+          //   position: relative;
+          //   border-radius: 3rem 3rem 0;
+          //   transform: rotate(45deg);
+          //   border: 1px solid #FFFFFF`;
+          // 
+          // const icon = L.divIcon({
+          //   className: "my-custom-pin",
+          //   iconAnchor: [0, 12],
+          //   labelAnchor: [-6, 0],
+          //   popupAnchor: [0, -36],
+          //   html: `<span style="${markerHtmlStyles}" />`
+          // });
+          // 
+          // var praxis_marker = L.marker([52.374766, 9.692085], {icon: icon}).addTo(mymap);
+          
+          var praxis_marker = L.marker([52.374766, 9.692085]).addTo(mymap);
+          var praxis_options = {
+            offset: [-50, 15],
+            closeButton: true,
+            autoClose: false,
+            closeOnClick: false,
+            className: "praxis-popup"};
+          
+          // marker.bindPopup("Arztpraxis Hermes", { closeOnClick: false, autoClose: false }).openPopup();
+          praxis_marker.bindPopup("Arztpraxis Hermes", praxis_options).openPopup();
+          praxis_marker.bindTooltip("Arztpraxis Hermes", { permanent: true, direction: 'left' });
+          
+          var train_marker = L.marker([52.37539, 9.6951]).addTo(mymap);
+          
+          train_marker.bindPopup("<b>Haltestelle Wunstorfer Straße</b><br>Stadtbahn 10 (HBF \<=\> Ahlem)<br>Bus 700 (HBF \<=\> Dedensen)", { closeOnClick: false, autoClose: false}).openPopup();
+          
+          train_marker.bindTooltip("{{ page.info-blocks.Anfahrt.places.haltestelle.label }}", { permanent: true, direction: 'right' });
+          
+          </script>
+
+
+
         {% endif %}
       </div>
     {% endfor %}
 
-  </div> <!-- closing info-boxes -->
+  </div> <!-- closing info-blocks-->
 </div> <!-- closing main -->

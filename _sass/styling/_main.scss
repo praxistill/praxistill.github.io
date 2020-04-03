@@ -1,29 +1,55 @@
 /* MAIN */
 
-.info-box {
+.info-block {
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.03);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.03);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.03);
 }
 
-.info-box-header {
+.info-block-header {
 	background-color: color(default, info-block, background-color);
 	opacity: color(default, info-block, opacity);
 }
 
-.info-box-body {
+.info-block-body {
 	background-color: color(default, info-block, background-color);
 	opacity: color(default, info-block, opacity);
 }
 
 .info-body-content {
-	font-size: var(--info-box-body-font-size);
+	font-size: var(--info-block-body-font-size);
 }
 
 .info-header-content {
 	text-align: center;
 	font-size: font(default, heading-info-block, size);
 	line-height: font(default, heading-info-block, line-height);
+}
+
+/*another-popop style*/
+.praxis-popup .leaflet-popup-content-wrapper {
+  background: color(default, base, primary);
+  color: #eee;
+  font-size: 12px;
+  line-height: 24px;
+  border-radius: 0px;
+}
+.praxis-popup .leaflet-popup-content-wrapper a {
+  color: rgba(200, 200, 200, 0.1);
+}
+
+.praxis-popup .leaflet-popup-content {
+	margin: 1px 20px 1px 3px;
+}
+
+.praxis-popup .leaflet-popup-tip-container {
+  width: 50px;
+  height: 15px;
+}
+.praxis-popup .leaflet-popup-tip {
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 .copyright {
