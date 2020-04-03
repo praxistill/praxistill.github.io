@@ -48,52 +48,23 @@
           'attribution': "", 
           'useCache': true
           }).addTo(mymap);
-          
-          // const myCustomColour = '{{ site.styling.colors.default.base.primary }}';
-          // 
-          // const markerHtmlStyles = `
-          //   background-color: ${myCustomColour};
-          //   width: 2rem;
-          //   height: 2rem;
-          //   display: block;
-          //   left: -1.5rem;
-          //   top: -1.5rem;
-          //   position: relative;
-          //   border-radius: 3rem 3rem 0;
-          //   transform: rotate(45deg);
-          //   border: 1px solid #FFFFFF`;
-          // 
-          // const icon = L.divIcon({
-          //   className: "my-custom-pin",
-          //   iconAnchor: [0, 12],
-          //   labelAnchor: [-6, 0],
-          //   popupAnchor: [0, -36],
-          //   html: `<span style="${markerHtmlStyles}" />`
-          // });
-          // 
-          // var praxis_marker = L.marker([52.374766, 9.692085], {icon: icon}).addTo(mymap);
-          
-          var praxis_marker = L.marker([52.374766, 9.692085]).addTo(mymap);
-          var praxis_options = {
-            offset: [-50, 15],
-            closeButton: true,
-            autoClose: false,
-            closeOnClick: false,
-            className: "praxis-popup"};
-          
-          // marker.bindPopup("Arztpraxis Hermes", { closeOnClick: false, autoClose: false }).openPopup();
-          praxis_marker.bindPopup("Arztpraxis Hermes", praxis_options).openPopup();
-          praxis_marker.bindTooltip("Arztpraxis Hermes", { permanent: true, direction: 'left' });
-          
-          var train_marker = L.marker([52.37539, 9.6951]).addTo(mymap);
-          
-          train_marker.bindPopup("<b>Haltestelle Wunstorfer Straße</b><br>Stadtbahn 10 (HBF \<=\> Ahlem)<br>Bus 700 (HBF \<=\> Dedensen)", { closeOnClick: false, autoClose: false}).openPopup();
-          
-          train_marker.bindTooltip("{{ page.info-blocks.Anfahrt.places.haltestelle.label }}", { permanent: true, direction: 'right' });
-          
+
+          {% for place in info_block.places %}
+
+            var marker = L.marker([{{ place[1].longlat[0] }}, {{ place[1].longlat[1] }}]).addTo(mymap);
+            marker.bindTooltip("{{ place[1].label }}", { permanent: true, direction: "{{ place[1].direction }}" });
+
+            {% if place[1].infos %}
+              marker.bindPopup("<b>{{ place[1].label }}</b>\
+              {% for info in place[1].infos %}\
+                <br>{{ info }}\
+              {% endfor %}\
+                ", {closeOnClick: false, autoClose: false}).openPopup();
+            {% endif %} 
+            
+
+          {% endfor %}
           </script>
-
-
 
         {% endif %}
       </div>
