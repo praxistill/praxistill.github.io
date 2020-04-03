@@ -8,9 +8,12 @@ description: > # '>' means to ignore newlines until the next element
 
 plugins:
     - jekyll-feed
-    - jekyll-seo-tag
+    - jekyll-seo-tag 
+    - jekyll-sitemap
 
 enabled-footer: false
+
+google_analytics: UA-162727517-1
 
 styling:
     colors:
