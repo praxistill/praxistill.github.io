@@ -19,7 +19,7 @@ info-blocks:
       "Telefon": 0511 / 928 60 76
       "Telefax": 0511 / 928 60 99
       "Adresse": "Zimmermannstr. 11/13<br>30453 Hannover"
-      "E-Mail (wöchentlicher Abruf)": "info@arztpraxis-hermes.de"
+      "E-Mail": "info@arztpraxis-hermes.de"
   
   Anfahrt:
     class: map
