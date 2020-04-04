@@ -2,27 +2,30 @@
 layout: home 
 
 # last update
-date: 2020-04-03 18:00:00 +0100
+date: 2020-04-04 9:00:00 +0100
 
 info-blocks:
 
-  Sprechzeiten:
+  office-hours:
     class: info-table
-    info-entries:
+    title: "Sprechzeiten"
+    table-entries:
       "Montag bis Freitag": "8:45 bis 12:15 Uhr"
       "Montags und Donnerstags": "14:45 bis 18:00 Uhr"
       "": "Zusätzlich nach Vereinbarung"
   
-  Kontakt:
+  contact:
     class: info-table
-    info-entries:
+    title: "Kontakt"
+    table-entries:
       "Telefon": 0511 / 928 60 76
       "Telefax": 0511 / 928 60 99
       "Adresse": "Zimmermannstr. 11/13<br>30453 Hannover"
       "E-Mail": "info@arztpraxis-hermes.de"
   
-  Anfahrt:
+  arrival:
     class: map
+    title: "Anfahrt"
     places:
       praxis:
         label: "Arztpraxis Hermes"

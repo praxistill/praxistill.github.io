@@ -2,8 +2,9 @@
   <div id="info-blocks" class="content">
 
     {% for info_block_entry in page.info-blocks %}
-    {% assign info_block_title = info_block_entry[0] %}
+    {% assign info_block_type = info_block_entry[1].class %}
     {% assign info_block = info_block_entry[1] %}
+    {% assign info_block_title = info_block.title %}
       <div class="info-block">
         <div class="info-block-header">
           <div class="info-header-content">
@@ -11,15 +12,15 @@
           </div>
         </div> <!-- closing info-block-header -->
 
-        {% if info_block.class == "info-table" %}
+        {% if info_block_type == "info-table" %}
           <div class="info-block-body">
               <div class="info-body-content">
                 <table class="info-table">
                   <tbody class="info-table-body">
-                    {% for info_entry in info_block.info-entries %}
+                    {% for table_entry in info_block.table-entries %}
                       <tr class="info-entry">
-                        {% assign key = info_entry[0] %}
-                        {% assign value = info_entry[1] %}
+                        {% assign key = table_entry[0] %}
+                        {% assign value = table_entry[1] %}
                         {% if key != "" %}
                           <td class="info-key">{{ key }}</td>
                         {% endif %}
@@ -32,7 +33,7 @@
                 </table>
               </div> <!-- closing info-body-content -->
           </div> <!-- closing info-block-body -->
-        {% elsif info_block.class == "map" %}
+        {% elsif info_block_type == "map" %}
           <div class="info-block-body" id="info-block-map">
 
             <div id="mapdiv" class="map-block"></div>
@@ -43,7 +44,7 @@
              integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
              crossorigin=""></script>
           <script>
-          var mymap = L.map('mapdiv').setView([52.374766, 9.692085], 15.2);
+          var mymap = L.map('mapdiv').setView([52.374766, 9.692085], 15);
           L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           'attribution': "", 
           'useCache': true
@@ -59,7 +60,7 @@
               {% for info in place[1].infos %}\
                 <br>{{ info }}\
               {% endfor %}\
-                ", {closeOnClick: false, autoClose: false}).openPopup();
+                ", {closeOnClick: false, autoClose: false, offset: [0, 20]}).openPopup();
             {% endif %} 
             
 
