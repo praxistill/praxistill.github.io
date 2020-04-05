@@ -1,0 +1,21 @@
+.current {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+}
+
+.news-block {
+	background-color: rgba(200, 200, 255, 0.4); // color(default, info-block, background-color);
+	opacity: color(default, info-block, opacity);
+	// flex-grow: 1;
+	font-size: 1.3em;
+
+	height: 3em;
+
+	margin: 0 1em 0 1em;
+
+	padding: 0.8em;
+
+	text-align: center;
+}

@@ -18,46 +18,18 @@
 	grid-template-rows: 4em 10em auto auto 10em;
 	grid-template-areas:
 		"header header header"
-		". . ."
+		". current ."
 		". main ."
 		". . ."
 		"footer footer footer";
 }
 
-// @media only screen and (max-aspect-ratio: 1/1) {
-// 
-// 	.page {
-// 		grid-template-columns: 4em auto 4em;
-// 	}
-// }
-// 
-// @media only screen and (min-aspect-ratio: 1/1) {
-// 
-// 	.page {
-// 		grid-template-columns: 4em auto 4em;
-// 	}
-// }
-// 
-// @media only screen and (min-aspect-ratio: 4/3) {
-// 
-// 	.page {
-// 		grid-template-columns: 16em auto 16em;
-// 	}
-// }
-// 
-// // wide view display
-// @media only screen and (min-aspect-ratio: 16/9) {
-// 
-// 	.page {
-// 		grid-template-columns: 30em auto 30em;
-// 	}
-// 
-// }
-
-
-
 .header {
 	grid-area: header;
+}
+
+.current {
+	grid-area: current;
 }
 
 .main {
@@ -70,5 +42,6 @@
 
 @import 'layout/navigation';
 @import 'layout/header';
+@import 'layout/current';
 @import 'layout/main';
 @import 'layout/footer';

@@ -21,11 +21,18 @@
                       <tr class="info-entry">
                         {% assign key = table_entry[0] %}
                         {% assign value = table_entry[1] %}
-                        {% if key != "" %}
+                        
+                        {% if key contains "E-Mail" %}
                           <td class="info-key">{{ key }}</td>
-                        {% endif %}
-                        {% if value != "" %}
-                          <td class="info-value">{{ value }}</td>
+                          <td class="info-value"><a href= "mailto:{{ value }}">{{ value }}</a></td>
+                        {% else %}
+
+                          {% if key != "" %}
+                            <td class="info-key">{{ key }}</td>
+                          {% endif %}
+                          {% if value != "" %}
+                            <td class="info-value">{{ value }}</td>
+                          {% endif %}
                         {% endif %}
                       </tr>
                     {% endfor %}

@@ -4,6 +4,9 @@ layout: home
 # last update
 date: 2020-04-04 9:00:00 +0100
 
+current:
+  content: "Aufgrund der aktuellen Lage..."
+
 info-blocks:
 
   office-hours:
@@ -41,3 +44,5 @@ info-blocks:
 
       
 ---
+
+Aufgrund
