@@ -18,7 +18,7 @@
 	
 	display: grid;
 	grid-template-columns: auto auto auto; //minmax(min-content, 80%) auto;
-	grid-template-rows: 4em 10em auto auto 10em;
+	grid-template-rows: 4em 10em auto auto 2em;
 	grid-template-areas:
 		"header header header"
 		". current ."

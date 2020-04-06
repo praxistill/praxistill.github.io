@@ -1,5 +1,12 @@
 @import 'styling/colors';
 
+@mixin box-shadow($property) {
+    -webkit-box-shadow: $property;
+    -moz-box-shadow: $property;
+    box-shadow: $property;
+}
+
+
 body {
   background: url(../img/background-transparent.png) no-repeat center center fixed;
   -webkit-background-size: cover;

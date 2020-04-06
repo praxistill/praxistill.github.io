@@ -20,16 +20,21 @@ styling:
         default:
             base:
                 # primary: '#00a087'
-                primary: "rgb(104,147,238)"
+                primary: "rgb(35, 124, 201)"
                 text: '#2e2e2e'
             header:
-                background-color: "rgba(104, 147, 238, 0.1)"
-                box-shadow: "0px 3px 3px 0px rgba(50, 50, 50, 0.2)"
+                # background-color: "rgba(104, 147, 238, 0.7)"
+                background-color: "rgba(35, 124, 201, 0.8)"
+                box-shadow: "0px 3px 3px 0px rgba(0, 0, 0, 0.0)"
+
+            footer:
+                background-color: "rgba(255, 255, 255, 0)"
 
             sitename:
                 color: "rgba(255, 255, 255, 1)"
             info-block:
                 background-color: "rgba(255, 255, 255, 0.4)"
+                box-shadow: "10px 10px 5px 0px rgba(0, 0, 0, 0.0)"
                 opacity: 1
     
     fonts:
