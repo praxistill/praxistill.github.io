@@ -4,8 +4,8 @@
 
 %header-styling {
 	@extend %bar-styling;
-	background-color: color(default, base, primary);
-	box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.6);
+	background-color: color(default, header, background-color);
+	box-shadow: color(default, header, box-shadow); // 0px 3px 3px 0px rgba(50, 50, 50, 0.6);
 }
 
 .header {
@@ -18,5 +18,6 @@
 
 }
 a.sitename, a:visited.sitename {
-  color: #e0e0e0;
+  // color: #e0e0e0;
+  color: color(default, sitename, color);
 }

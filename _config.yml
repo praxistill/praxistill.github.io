@@ -11,7 +11,7 @@ plugins:
     - jekyll-seo-tag 
     - jekyll-sitemap
 
-enabled-footer: false
+enabled-footer: true
 
 google_analytics: UA-162727517-1
 
@@ -19,8 +19,15 @@ styling:
     colors:
         default:
             base:
-                primary: '#00a087'
+                # primary: '#00a087'
+                primary: "rgb(104,147,238)"
                 text: '#2e2e2e'
+            header:
+                background-color: "rgba(104, 147, 238, 0.1)"
+                box-shadow: "0px 3px 3px 0px rgba(50, 50, 50, 0.2)"
+
+            sitename:
+                color: "rgba(255, 255, 255, 1)"
             info-block:
                 background-color: "rgba(255, 255, 255, 0.4)"
                 opacity: 1

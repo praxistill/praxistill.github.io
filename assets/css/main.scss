@@ -13,6 +13,13 @@ $colors: (
 			primary: {{ site.styling.colors.default.base.primary }},
 			text: {{ site.styling.colors.default.base.text }}
 		),
+		header: (
+			background-color: {{ site.styling.colors.default.header.background-color }},
+			box-shadow: {{ site.styling.colors.default.header.box-shadow }}
+		),
+		sitename: (
+			color: {{ site.styling.colors.default.sitename.color }}
+		),
 		info-block: (
 			background-color: {{ site.styling.colors.default.info-block.background-color }},
 			opacity: {{ site.styling.colors.default.info-block.opacity }}

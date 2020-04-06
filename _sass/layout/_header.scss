@@ -5,6 +5,8 @@
 	grid-template-areas:
 		"header-left header-nav header-right";
 	grid-column-gap: 3rem;
+
+	position: sticky;
 }
 
 .menu {
