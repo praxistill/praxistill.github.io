@@ -17,12 +17,16 @@ $colors: (
 			background-color: {{ site.styling.colors.default.header.background-color }},
 			box-shadow: {{ site.styling.colors.default.header.box-shadow }}
 		),
+		footer: (
+			background-color: {{ site.styling.colors.default.footer.background-color }}
+		),
 		sitename: (
 			color: {{ site.styling.colors.default.sitename.color }}
 		),
 		info-block: (
 			background-color: {{ site.styling.colors.default.info-block.background-color }},
-			opacity: {{ site.styling.colors.default.info-block.opacity }}
+			opacity: {{ site.styling.colors.default.info-block.opacity }},
+			box-shadow: {{ site.styling.colors.default.info-block.box-shadow }}
 		)
 	)
 
