@@ -19,7 +19,6 @@ styling:
     colors:
         default:
             base:
-                # primary: '#00a087'
                 primary: "rgb(35, 124, 201)"
                 text: '#2e2e2e'
             header:
