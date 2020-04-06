@@ -13,8 +13,6 @@
 
 .page {
 
-	// margin-top: 4em;
-
 	height: 100vh;
 	width: 100vw;
 	
@@ -33,7 +31,6 @@
 
 	height: 100vh;
 	width: 100vw;
-	// overflow: hidden;
 	
 	display: grid;
 	grid-template-columns: minmax(0, 30em) auto minmax(0, 30em); 
@@ -48,10 +45,6 @@
 
 .main-default {
 	grid-area: main-default;
-}
-
-.header {
-	grid-area: header;
 }
 
 .current {
