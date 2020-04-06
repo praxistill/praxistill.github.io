@@ -5,12 +5,14 @@
 
   {%- include header.html -%}
   <div class="page-default">
-    
-    {{ page.content }}
 
-    {% if site.enabled-footer %}
-      {%- include footer.html -%}
-    {% endif %}
+    <div class="main-default">
+      {{ content }}
+  
+      {% if site.enabled-footer %}
+        {%- include footer.html -%}
+      {% endif %}
+    </div>
     
   </div> <!-- closing page-->
 </body>

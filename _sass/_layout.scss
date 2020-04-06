@@ -12,6 +12,9 @@
 }
 
 .page {
+
+	margin-top: 4em;
+
 	height: 100vh;
 	width: 100vw;
 	// overflow: hidden;
@@ -33,15 +36,13 @@
 	// overflow: hidden;
 	
 	display: grid;
-	grid-template-columns: minmax(0, 30em) auto minmax(0, 30em); //minmax(min-content, 80%) auto;
-	grid-template-rows: 4em 10em auto auto 2em;
+	grid-template-columns: minmax(0, 30em) auto minmax(0, 30em); 
+	grid-template-rows: 10em auto auto 2em;
 	grid-template-areas:
 		". . ."
 		". main-default ."
 		". . ."
 		"footer footer footer";
-
-
 }
 
 .main-default {

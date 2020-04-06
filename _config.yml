@@ -13,7 +13,7 @@ plugins:
 
 enabled-footer: true
 
-google_analytics: UA-162727517-1
+# google_analytics: UA-162727517-1
 
 styling:
     colors:

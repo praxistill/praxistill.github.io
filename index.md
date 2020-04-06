@@ -5,7 +5,7 @@ layout: home
 date: 2020-04-04 9:00:00 +0100
 
 current:
-  content: "Aufgrund der aktuellen Lage..."
+  content: "Unsere Website befindet sich im Aufbau"
 
 info-blocks:
 
@@ -44,5 +44,3 @@ info-blocks:
 
       
 ---
-
-Aufgrund
