@@ -17,14 +17,35 @@
 	// overflow: hidden;
 	
 	display: grid;
-	grid-template-columns: auto auto auto; //minmax(min-content, 80%) auto;
-	grid-template-rows: 4em 10em auto auto 2em;
+	grid-template-columns: auto auto auto; // minmax(0, 30em) auto minmax(0, 30em); //minmax(min-content, 80%) auto;
+	grid-template-rows: 10em auto auto 2em;
 	grid-template-areas:
-		"header header header"
 		". current ."
 		". main ."
 		". . ."
 		"footer footer footer";
+}
+
+.page-default {
+
+	height: 100vh;
+	width: 100vw;
+	// overflow: hidden;
+	
+	display: grid;
+	grid-template-columns: minmax(0, 30em) auto minmax(0, 30em); //minmax(min-content, 80%) auto;
+	grid-template-rows: 4em 10em auto auto 2em;
+	grid-template-areas:
+		". . ."
+		". main-default ."
+		". . ."
+		"footer footer footer";
+
+
+}
+
+.main-default {
+	grid-area: main-default;
 }
 
 .header {

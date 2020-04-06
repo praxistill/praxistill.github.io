@@ -1,12 +1,18 @@
 .header {
 
 	display: grid;
-	grid-template-columns: subgrid;
+	grid-template-columns: minmax(0, 25em) auto minmax(0, 25em);
 	grid-template-areas:
 		"header-left header-nav header-right";
 	grid-column-gap: 3rem;
 
-	position: sticky;
+	// position: sticky;
+
+	overflow: hidden;
+  	position: fixed; /* Set the navbar to fixed position */
+  	top: 0; /* Position the navbar at the top of the page */
+  	width: 100%; /* Full width */
+	height: 4em;
 }
 
 .menu {
@@ -17,6 +23,10 @@
 
 .sitename {
 
+}
+
+.header-nav {
+	height: 100%;
 }
 
 .header-nav {
