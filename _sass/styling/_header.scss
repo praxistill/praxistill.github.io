@@ -5,7 +5,7 @@
 %header-styling {
 	@extend %bar-styling;
 	background-color: color(default, header, background-color);
-	box-shadow: color(default, header, box-shadow); // 0px 3px 3px 0px rgba(50, 50, 50, 0.6);
+	@include box-shadow(color(default, header, box-shadow));
 }
 
 .header {

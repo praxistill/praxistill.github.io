@@ -6,13 +6,37 @@
     box-shadow: $property;
 }
 
+@mixin background-size($property) {
+
+	-webkit-background-size: $property;
+	-moz-background-size: $property;
+	-o-background-size: $property;
+	background-size: $property;
+}
+
+// body {
+//   background: url(../img/background-transparent.png) no-repeat center center fixed;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+// }
 
 body {
-  background: url(../img/background-transparent.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  position: relative;
+}
+
+.pagebg-container {
+	background: url(../img/background-transparent.png);
+  	background-position: center top;
+  	background-repeat: no-repeat;
+	@include background-size(cover);
+  	
+	height: 100%;  
+  	position: fixed;
+  	width: 100%;
+
+	z-index: -9999;
 }
 
 h1, h2 {
