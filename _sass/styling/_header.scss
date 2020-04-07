@@ -12,6 +12,17 @@
 	@extend %header-styling;
 }
 
+.site-logo {
+
+	height: 2em;
+	width: 2em;
+	background: url("../img/logo.svg");
+  	background-position: center top;
+  	background-repeat: no-repeat;
+	@include background-size(cover);
+ 
+}
+
 .sitename {
   font-size: font(default, heading-title, size);
   line-height: font(default, heading-title, line-height);
