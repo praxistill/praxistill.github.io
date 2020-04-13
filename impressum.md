@@ -49,7 +49,7 @@ Zuständige Kammer: Ärztekammer Niedersachsen
 Verliehen durch: Niedersachsen  
 Es gelten folgende berufsrechtliche Regelungen: Berufsordnung der Ärztekammer Niedersachsen  
 Regelungen einsehbar unter:  
-[https://www.aekn.de/fileadmin/media/Downloadcenter/Amtliche\_Bekanntmachungen/4\_Berufsordnung\_der\_AErztekammer\_Niedersachsen/BO\_komplett\_01\_06\_2018.pdf](https://www.aekn.de/fileadmin/media/Downloadcenter/Amtliche_Bekanntmachungen/4_Berufsordnung_der_AErztekammer_Niedersachsen/BO_komplett_01_06_2018.pdf)
+[https://www.aekn.de/fileadmin/media/Downloadcenter/Amtliche\_Bekanntmachungen/4\_Berufsordnung\_der\_AErztekammer\_Niedersachsen/BO\_komplett\_01\_06\_2018.pdf](Berufsordnung 2018)
 
 Angaben zur Berufshaftpflichtversicherung
 -----------------------------------------
