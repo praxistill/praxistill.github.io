@@ -13,6 +13,13 @@ plugins:
 
 enabled-footer: true
 
+defaults:
+    -
+        scope:
+            path: "google*.html"
+        values:
+            sitemap: false
+
 # google_analytics: UA-162727517-1
 
 styling:
