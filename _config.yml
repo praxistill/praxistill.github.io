@@ -13,6 +13,9 @@ plugins:
 
 enabled-footer: true
 
+exclude:
+    - Makefile
+
 defaults:
     -
         scope:
