@@ -10,11 +10,11 @@
     <div class="main-default">
       {{ content }}
   
-      {% if site.enabled-footer %}
-        {%- include footer.html -%}
-      {% endif %}
     </div>
-    
+    {% if site.enabled-footer %}
+      {%- include footer.html -%}
+    {% endif %}
+   
   </div> <!-- closing page-->
 </body>
 </html>
