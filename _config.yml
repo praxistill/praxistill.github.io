@@ -57,6 +57,9 @@ styling:
             heading-title:
                 size: 1.6em
                 line-height: 1.5em
+            menu-item:
+                size: 1.3em 
+                line-height: 1.5em
             heading-info-block:
                 size: 1.8em
                 line-height: 1.41em

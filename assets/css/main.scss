@@ -50,6 +50,10 @@ $fonts: (
 		heading-title: (
 			size: {{ site.styling.fonts.default.heading-title.size }},
 			line-height: {{ site.styling.fonts.default.heading-title.line-height }}
+		),
+		menu-item: (
+			size: {{ site.styling.fonts.default.menu-item.size }},
+			line-height: {{ site.styling.fonts.default.menu-item.line-height }}
 		)
 	)
 );

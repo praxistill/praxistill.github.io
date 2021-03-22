@@ -28,6 +28,17 @@
   line-height: font(default, heading-title, line-height);
 
 }
+
+.menu-item {
+	font-size: font(default, menu-item, size);
+	line-height: font(default, menu-item, line-height);
+}
+
+a.menu-item, a:visited.menu-item {
+
+  color: color(default, sitename, color);
+}
+
 a.sitename, a:visited.sitename {
   // color: #e0e0e0;
   color: color(default, sitename, color);

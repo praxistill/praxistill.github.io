@@ -1,10 +1,10 @@
 .header {
 
-	display: grid;
-	grid-template-columns: minmax(0, 25em) auto minmax(0, 25em);
-	grid-template-areas:
-		"header-left header-nav header-right";
-	grid-column-gap: 3rem;
+	// display: grid;
+	// grid-template-columns: minmax(0, 25em) auto minmax(0, 25em);
+	// grid-template-areas:
+	// 	"header-left header-nav header-right";
+	// grid-column-gap: 3rem;
 
 	// position: sticky;
 
@@ -15,11 +15,11 @@
 	height: 4em;
 }
 
-.menu {
-	height: 100%;
-	display: flex;
-	align-items: center;
-}
+// .menu {
+// 	height: 100%;
+// 	display: flex;
+// 	align-items: center;
+// }
 
 .sitename {
 	white-space: nowrap;
@@ -27,16 +27,4 @@
 
 .header-nav {
 	height: 100%;
-}
-
-.header-nav {
-	grid-area: header-nav;
-}
-
-.header-left {
-	grid-area: header-left;
-}
-
-.header-right {
-	grid-area: header-right;
 }

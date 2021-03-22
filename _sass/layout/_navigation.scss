@@ -1,12 +1,104 @@
+// a {
+//     position: relative;
+//     text-decoration: none;
+// 
+//     &::before {
+//         content: "";
+//         position: absolute;          
+//         height: 3px;
+//         right: 0px;
+//         bottom: -3px;
+//         left: 0px;
+//         // background-color: $linkPink;
+//     }
+//     
+//     // &:hover {
+//     //     color: $linkPink;
+// 
+//     //     &::before {
+//     //         background: linear-gradient(to right, $linkPink 40%, $linkPurple 75%);               
+//     //     }
+//     // }
+// }
+
+// nav.header-nav {
+//     margin-bottom: 4rem;
+//     padding: 10px;
+//     font-size: 1.5rem;
+// 
+//     @media (min-width: 600px){
+//         padding: 20px;
+//     }   
+// 
+//     ul {
+//         list-style-type: none;
+//         margin: 0px;
+//         padding: 0px;      
+//     }
+// 
+//     a {
+//       font-size: 1.25rem;
+//       
+//       @media (min-width: 42em){
+//         font-size: 2rem;
+//       }
+//     }
+// }
 
 nav {
-	ul {
-		display: block;
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-	}
-	li {
-		display: inline;
-	}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+
+			display: grid;
+			// grid-template-rows: repeat(1, 100px);
+			grid-template-columns: repeat(4, 100px);
+			grid-gap: 10px;
+			justify-content: center;
+			justify-items: center;
+
+			@media (min-width: 600px){
+        	    grid-template-columns: 1fr repeat(4, fit-content(50px));
+        	    grid-gap: 20px;
+        	    justify-items: end;
+        	}
+		}
+
+     .fullwidth {
+         grid-column: 1 / 4;
+ 
+         @media (min-width: 600px){
+             grid-column: 1 / 2;
+             justify-self: start;
+         }
+     }
+
+
 }
+
+// nav.header-nav {
+// 
+//         display: grid;
+//         grid-template-columns: repeat(3, 100px);
+//         grid-gap: 10px;
+//         justify-content: center;
+//         justify-items: center;
+// 
+//         @media (min-width: 600px){
+//             grid-template-columns: 1fr repeat(3, fit-content(50px));
+//             grid-gap: 20px;
+//             justify-items: end;
+//         }
+// 
+//     // .fullwidth {
+//     //     grid-column: 1 / 4;
+// 
+//     //     @media (min-width: 600px){
+//     //         grid-column: 1 / 2;
+//     //         justify-self: start;
+//     //     }
+//     // }
+// }
+
+
