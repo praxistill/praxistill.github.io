@@ -34,12 +34,10 @@
 	line-height: font(default, menu-item, line-height);
 }
 
-a.menu-item, a:visited.menu-item {
-
-  color: color(default, sitename, color);
+.menu-item > a, .menu-item > a:visited {
+  color: color(default, menu-item, color);
 }
 
 a.sitename, a:visited.sitename {
-  // color: #e0e0e0;
   color: color(default, sitename, color);
 }

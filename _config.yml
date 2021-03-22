@@ -37,7 +37,8 @@ styling:
 
             footer:
                 background-color: "rgba(255, 255, 255, 0)"
-
+            menu-item:
+                color: "rgba(255, 255, 255, 1)"
             sitename:
                 color: "rgba(255, 255, 255, 1)"
             info-block:

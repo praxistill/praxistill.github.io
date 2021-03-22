@@ -23,6 +23,10 @@ $colors: (
 		sitename: (
 			color: {{ site.styling.colors.default.sitename.color }}
 		),
+		menu-item: (
+			color: {{ site.styling.colors.default.menu-item.color }}
+		),
+
 		info-block: (
 			background-color: {{ site.styling.colors.default.info-block.background-color }},
 			opacity: {{ site.styling.colors.default.info-block.opacity }},
