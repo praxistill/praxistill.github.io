@@ -1,0 +1,44 @@
+<div class="main">
+  <div id="info-blocks" class="content">
+
+    {% for employee in page.employees %}
+      <div class="info-block">
+        <div class="info-block-header">
+          <div class="info-header-content">
+            <h3>{{ employee.name }}</h3>
+          </div>
+        </div> <!-- closing info-block-header -->
+          <div class="info-block-body">
+              <div class="info-body-content">
+
+                <img class="portrait" src="{{ employee.portrait }}" alt="{{ employee.name }}" />
+                <table class="info-table">
+                  <tbody class="info-table-body">
+                    {% for table_entry in info_block.table-entries %}
+                      <tr class="info-entry">
+                        {% assign key = table_entry[0] %}
+                        {% assign value = table_entry[1] %}
+                        
+                        {% if key contains "E-Mail" %}
+                          <td class="info-key">{{ key }}</td>
+                          <td class="info-value"><a href= "mailto:{{ value }}">{{ value }}</a></td>
+                        {% else %}
+
+                          {% if key != "" %}
+                            <td class="info-key">{{ key }}</td>
+                          {% endif %}
+                          {% if value != "" %}
+                            <td class="info-value">{{ value }}</td>
+                          {% endif %}
+                        {% endif %}
+                      </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              </div> <!-- closing info-body-content -->
+          </div> <!-- closing info-block-body -->
+      </div>
+    {% endfor %}
+
+  </div> <!-- closing info-blocks-->
+</div> <!-- closing main -->
