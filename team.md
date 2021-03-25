@@ -4,14 +4,15 @@ layout: team
 # last update
 date: 2020-04-04 9:00:00 +0100
 
+
+
 employees:
     - name: "Till Hermes" 
       title: ""
-      position: "Arzt"
-      qualifications:
-        - "Internist"
       portrait: /images/employees/till-hermes-300.png
-
+      table-entries:
+        "Tätigkeit": "Arzt"
+ 
     - name: "Harald Hermes"
       title: ""
       position: "Arzt"

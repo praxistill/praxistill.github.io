@@ -1,5 +1,11 @@
 /* MAIN */
 
+%block-styling {
+	background-color: color(default, info-block, background-color);
+	opacity: color(default, info-block, opacity);
+}
+
+
 .info-block {
 	@include box-shadow(color(default, info-block, box-shadow));
 }
@@ -12,6 +18,11 @@
 .info-block-body {
 	background-color: color(default, info-block, background-color);
 	opacity: color(default, info-block, opacity);
+}
+
+.employee-block-body {
+	@extend %block-styling;
+
 }
 
 .info-body-content {
