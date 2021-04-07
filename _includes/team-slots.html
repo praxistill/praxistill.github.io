@@ -1,29 +1,29 @@
 <div class="main">
-  <div id="info-blocks" class="content">
+  <div id="employee-blocks" class="content">
 
     {% for employee in page.employees %}
-      <div class="info-block">
-        <div class="info-block-header">
-          <div class="info-header-content">
+      <div class="employee-block">
+        <div class="employee-block-header">
+          <div class="employee-header-content">
             <h3>{{employee.title}} {{ employee.name }}</h3>
           </div>
         </div> <!-- closing info-block-header -->
           <div class="employee-block-body">
-              <div class="info-body-content">
+              <div class="employee-body-content">
 
                 <img class="portrait" src="{{ employee.portrait }}" alt="{{ employee.name }}" />
-                <table class="info-table">
-                  <tbody class="info-table-body">
+                <table class="employee-table">
+                  <tbody class="employee-table-body">
                     {% for table_entry in employee.table-entries %}
-                      <tr class="info-entry">
+                      <tr class="employee-entry">
                         {% assign key = table_entry[0] %}
                         {% assign value = table_entry[1] %}
                         
                           {% if key != "" %}
-                            <td class="info-key">{{ key }}</td>
+                            <td class="employee-key">{{ key }}</td>
                           {% endif %}
                           {% if value != "" %}
-                            <td class="info-value">{{ value }}</td>
+                            <td class="employee-value">{{ value }}</td>
                           {% endif %}
                       </tr>
                     {% endfor %}

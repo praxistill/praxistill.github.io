@@ -1,18 +1,15 @@
 <div class="main">
   <div id="info-blocks" class="content">
 
-    {% for info_block_entry in page.info-blocks %}
-    {% assign info_block_type = info_block_entry[1].class %}
-    {% assign info_block = info_block_entry[1] %}
-    {% assign info_block_title = info_block.title %}
+    {% for info_block in page.info-blocks %}
       <div class="info-block">
         <div class="info-block-header">
           <div class="info-header-content">
-            <h3>{{ info_block_title }}</h3>
+            <h3>{{ info_block.title }}</h3>
           </div>
         </div> <!-- closing info-block-header -->
 
-        {% if info_block_type == "info-table" %}
+        {% if info_block.table-entries %}
           <div class="info-block-body">
               <div class="info-body-content">
                 <table class="info-table">
@@ -40,7 +37,7 @@
                 </table>
               </div> <!-- closing info-body-content -->
           </div> <!-- closing info-block-body -->
-        {% elsif info_block_type == "map" %}
+        {% elsif info_block.places %}
           <div class="info-block-body" id="info-block-map">
 
             <div id="mapdiv" class="map-block"></div>
@@ -59,12 +56,12 @@
 
           {% for place in info_block.places %}
 
-            var marker = L.marker([{{ place[1].longlat[0] }}, {{ place[1].longlat[1] }}]).addTo(mymap);
-            marker.bindTooltip("{{ place[1].label }}", { permanent: true, direction: "{{ place[1].direction }}" });
+            var marker = L.marker([{{ place.longlat[0] }}, {{ place.longlat[1] }}]).addTo(mymap);
+            marker.bindTooltip("{{ place.name }}", { permanent: true, direction: "{{ place.direction }}" });
 
-            {% if place[1].infos %}
-              marker.bindPopup("<b>{{ place[1].label }}</b>\
-              {% for info in place[1].infos %}\
+            {% if place.infos %}
+              marker.bindPopup("<b>{{ place.name }}</b>\
+              {% for info in place.infos %}\
                 <br>{{ info }}\
               {% endfor %}\
                 ", {closeOnClick: false, autoClose: false, offset: [0, 20]}).openPopup();

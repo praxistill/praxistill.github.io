@@ -1,0 +1,76 @@
+/* MAIN */
+
+%block-styling {
+	background-color: color(default, info-block, background-color);
+	opacity: color(default, info-block, opacity);
+}
+
+
+.employee-block {
+	@include box-shadow(color(default, info-block, box-shadow));
+}
+
+.employee-block-header {
+	background-color: color(default, info-block, background-color);
+	opacity: color(default, info-block, opacity);
+}
+
+.employee-block-body {
+	background-color: color(default, info-block, background-color);
+	opacity: color(default, info-block, opacity);
+}
+
+.employee-block-body {
+	@extend %block-styling;
+
+}
+
+.employee-body-content {
+	font-size: var(--info-block-body-font-size);
+}
+
+.employee-header-content {
+	text-align: center;
+	font-size: font(default, heading-info-block, size);
+	line-height: font(default, heading-info-block, line-height);
+}
+
+/*another-popop style*/
+.praxis-popup .leaflet-popup-content-wrapper {
+  background: color(default, base, primary);
+  color: #eee;
+  font-size: 12px;
+  line-height: 24px;
+  border-radius: 0px;
+}
+.praxis-popup .leaflet-popup-content-wrapper a {
+  color: rgba(200, 200, 200, 0.1);
+}
+
+.praxis-popup .leaflet-popup-content {
+	margin: 1px 20px 1px 3px;
+}
+
+.praxis-popup .leaflet-popup-tip-container {
+  width: 50px;
+  height: 15px;
+}
+.praxis-popup .leaflet-popup-tip {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.copyright {
+	margin-top: 0;
+	color: rgba(0,0,0,0.3);
+}
+.copyright a {
+	color: color(default, base, primary);
+}
+
+/* INFO TABLE */
+
+.employee-key::after {
+	content: ":";
+}
