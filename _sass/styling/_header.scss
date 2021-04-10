@@ -1,8 +1,4 @@
-%bar-styling {
-}
-
 %header-styling {
-	@extend %bar-styling;
 	background-color: color(default, header, background-color);
 	@include box-shadow(color(default, header, box-shadow));
 }
