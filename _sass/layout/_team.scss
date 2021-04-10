@@ -50,14 +50,14 @@ img.portrait {
 	@extend %employee-block-layout;
 
 	margin: 0em 0em 0em 0em;
-	height: var(--info-block-body-height);
+	// height: var(--info-block-body-height);
 }
 
 .employee-block-body {
 	@extend %employee-block-layout;
 
 	margin: 0em 0em 0em 0em;
-	height: var(--info-block-body-height);
+	// height: var(--info-block-body-height);
 }
 
 #employee-block-map {

@@ -35,7 +35,7 @@
 	
 	display: grid;
 	grid-template-columns: minmax(0, 30em) auto minmax(0, 30em); 
-	grid-template-rows: 4em auto auto auto 2em;
+	grid-template-rows: 4em 5em auto auto 2em;
 	grid-template-areas:
 		". . ."
 		". . ."

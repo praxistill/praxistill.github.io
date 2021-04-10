@@ -53,13 +53,6 @@ img.portrait {
 	height: var(--info-block-body-height);
 }
 
-.employee-block-body {
-	@extend %info-block-layout;
-
-	margin: 0em 0em 0em 0em;
-	height: var(--employee-block-body-height);
-}
-
 #info-block-map {
 	padding: 0em 0em 0em 0em;
 }

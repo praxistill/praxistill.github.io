@@ -4,38 +4,36 @@
     {% for info_block in page.info-blocks %}
       <div class="info-block">
         <div class="info-block-header">
-          <div class="info-header-content">
-            <h3>{{ info_block.title }}</h3>
-          </div>
+          <h3 class="info-header-content">{{ info_block.title }}</h3>
         </div> <!-- closing info-block-header -->
 
         {% if info_block.table-entries %}
           <div class="info-block-body">
-              <div class="info-body-content">
-                <table class="info-table">
-                  <tbody class="info-table-body">
-                    {% for table_entry in info_block.table-entries %}
-                      <tr class="info-entry">
-                        {% assign key = table_entry[0] %}
-                        {% assign value = table_entry[1] %}
-                        
-                        {% if key contains "E-Mail" %}
-                          <td class="info-key">{{ key }}</td>
-                          <td class="info-value"><a href= "mailto:{{ value }}">{{ value }}</a></td>
-                        {% else %}
+            <div class="info-body-content">
+              <table class="info-table">
+                <tbody class="info-table-body">
+                  {% for table_entry in info_block.table-entries %}
+                    <tr class="info-entry">
+                      {% assign key = table_entry[0] %}
+                      {% assign value = table_entry[1] %}
+                      
+                      {% if key contains "E-Mail" %}
+                        <td class="info-key">{{ key }}</td>
+                        <td class="info-value"><a href= "mailto:{{ value }}">{{ value }}</a></td>
+                      {% else %}
 
-                          {% if key != "" %}
-                            <td class="info-key">{{ key }}</td>
-                          {% endif %}
-                          {% if value != "" %}
-                            <td class="info-value">{{ value }}</td>
-                          {% endif %}
+                        {% if key != "" %}
+                          <td class="info-key">{{ key }}</td>
                         {% endif %}
-                      </tr>
-                    {% endfor %}
-                  </tbody>
-                </table>
-              </div> <!-- closing info-body-content -->
+                        {% if value != "" %}
+                          <td class="info-value">{{ value }}</td>
+                        {% endif %}
+                      {% endif %}
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div> <!-- closing info-body-content -->
           </div> <!-- closing info-block-body -->
         {% elsif info_block.places %}
           <div class="info-block-body" id="info-block-map">
