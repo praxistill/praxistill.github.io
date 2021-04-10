@@ -1,5 +1,4 @@
 %bar-styling {
-	z-index: 9999;
 }
 
 %header-styling {
@@ -23,21 +22,11 @@
 	margin-right: 1em; 
 }
 
-.sitename {
-  font-size: font(default, heading-title, size);
-  line-height: font(default, heading-title, line-height);
-
-}
-
-.menu-item {
-	font-size: font(default, menu-item, size);
-	line-height: font(default, menu-item, line-height);
-}
 
 .menu-item > a, .menu-item > a:visited {
   color: color(default, menu-item, color);
 }
 
-a.sitename, a:visited.sitename {
+.sitename {
   color: color(default, sitename, color);
 }
