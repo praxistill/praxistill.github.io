@@ -17,7 +17,7 @@ employees:
       title: ""
       portrait: /images/employees/harald-hermes-300.png
       table-entries:
-        "": "Praktischer Arzt"
+        "": "Arzt"
  
     - name: "Dagmar Blossei"
       title: ""
@@ -41,19 +41,18 @@ employees:
       title: ""
       portrait: /images/employees/gabriele-brand-300.png
       table-entries:
-        "": "Fachangestellte im medizinischen Bereich"
+        "": "Fachangestellte<br>im medizinischen Bereich"
 
     - name: "Rupert Nieger"
       title: ""
       portrait: /images/employees/rupert-nieger-300.png
       table-entries:
-        "": "Student der Humanmedizin & Notfallsanitäter"
+        "": "Student der Humanmedizin<br>& Notfallsanitäter"
  
     - name: "Dieter Schirmer"
       title: ""
       portrait: /images/employees/dieter-schirmer-300.png
       table-entries:
         "": "Archivar für Digitalisierung"
- 
  
 ---
