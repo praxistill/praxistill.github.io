@@ -47,13 +47,13 @@ employees:
       title: ""
       portrait: /images/employees/rupert-nieger-300.png
       table-entries:
-        "": "Studentische Hilfskraft"
+        "": "Student der Humanmedizin & Notfallsanitäter"
  
     - name: "Dieter Schirmer"
       title: ""
       portrait: /images/employees/dieter-schirmer-300.png
       table-entries:
-        "": "Archivar für Digitaisierung"
+        "": "Archivar für Digitalisierung"
  
  
 ---
