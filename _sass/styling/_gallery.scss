@@ -1,0 +1,36 @@
+/* MAIN */
+
+%block-styling {
+	background-color: color(default, info-block, background-color);
+	opacity: color(default, info-block, opacity);
+}
+
+
+.image-block {
+	@include box-shadow(color(default, info-block, box-shadow));
+}
+
+.image-block-header {
+	background-color: color(default, info-block, background-color);
+	opacity: color(default, info-block, opacity);
+}
+
+.image-block-body {
+	background-color: color(default, info-block, background-color);
+	opacity: color(default, info-block, opacity);
+}
+
+.image-block-body {
+	@extend %block-styling;
+
+}
+
+.image-body-content {
+	font-size: var(--info-block-body-font-size);
+}
+
+.image-header-content {
+	text-align: center;
+	font-size: font(default, heading-info-block, size);
+	line-height: font(default, heading-info-block, line-height);
+}

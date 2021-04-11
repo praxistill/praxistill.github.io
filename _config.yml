@@ -39,6 +39,7 @@ styling:
                 background-color: "rgba(255, 255, 255, 0)"
             menu-item:
                 color: "rgba(255, 255, 255, 1)"
+                hover: "rgba(255, 255, 255, 0.3)"
             sitename:
                 color: "rgba(255, 255, 255, 1)"
             info-block:

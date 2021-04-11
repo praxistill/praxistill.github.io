@@ -24,7 +24,8 @@ $colors: (
 			color: {{ site.styling.colors.default.sitename.color }}
 		),
 		menu-item: (
-			color: {{ site.styling.colors.default.menu-item.color }}
+			color: {{ site.styling.colors.default.menu-item.color }},
+			hover: {{ site.styling.colors.default.menu-item.hover }}
 		),
 
 		info-block: (

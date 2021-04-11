@@ -19,7 +19,15 @@
 }
 
 
-.menu-item > a, .menu-item > a:visited {
+// .menu-item > a, .menu-item > a:visited {
+//   color: color(default, menu-item, color);
+// }
+
+.nav-item:hover {
+   background-color: color(default, menu-item, hover);; 
+}
+
+.menu-item {
   color: color(default, menu-item, color);
 }
 
