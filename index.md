@@ -5,7 +5,7 @@ layout: home
 date: 2020-04-04 9:00:00 +0100
 
 current:
-  content: "Aufgrund der Covid-19-Pandemie haben wir unsere telefonische Erreichbarkeit erhöht<br>und nehmen zudem Rezeptbestellungen per eMail oder über die mailbox an"
+  content: "Aufgrund der Covid-19-Pandemie haben wir unsere telefonische Erreichbarkeit erhöht<br>und nehmen zudem Rezeptbestellungen über die mailbox oder per E-Mail an"
 
 info-blocks:
 
