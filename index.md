@@ -5,14 +5,15 @@ layout: home
 date: 2020-04-04 9:00:00 +0100
 
 current:
-  content: "Aufgrund der Covid-19-Pandemie haben wir unsere telefonische Erreichbarkeit erhöht<br>und bieten zudem die Möglichkeit einer Videosprechstunde an<br>(Terminvergabe hierfür telefonisch)"
+  content: "Aufgrund der Covid-19-Pandemie haben wir unsere telefonische Erreichbarkeit erhöht<br>und nehmen zudem Rezeptbestellungen per eMail oder über die mailbox an"
 
 info-blocks:
 
   - title: "Sprechzeiten"
     table-entries:
-      "Montag bis Freitag": "8:45 bis 12:15 Uhr"
-      "Montags und Donnerstags": "14:45 bis 18:00 Uhr"
+      "Mo, Mi, Do, Fr": "8:50 bis 12:00 Uhr"
+      "Dienstags": "8:50 bis 11:00 Uhr"
+      "Montags und Donnerstags": "15:00 bis 18:00 Uhr"
       "": "Zusätzlich nach Vereinbarung"
   
   - title: "Kontakt"
