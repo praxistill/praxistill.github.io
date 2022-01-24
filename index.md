@@ -8,13 +8,7 @@ current:
   content: "Aufgrund der Covid-19-Pandemie haben wir unsere telefonische Erreichbarkeit erhöht<br>und nehmen zudem Rezeptbestellungen über die mailbox oder per E-Mail an"
 
 info-blocks:
-  - title: "Neuigkeiten"
-    table-entries:
-      - ["Unser Impfsamstag am", "<b>29.01.2022 ab 11 Uhr</b>"]
-      - ["<b>Biontech</b>", ""]
-      - ["", "Erstimpfung/Zweitimpfung/Booster"]
-      - ["", "Sprechen Sie uns an und vereinbaren Sie einen Termin!"]
-       
+
   - title: "Sprechzeiten"
     table-entries:
       "Mo, Mi, Do, Fr": "8:50 bis 12:00 Uhr"
