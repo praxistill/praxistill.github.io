@@ -2,34 +2,34 @@
   <div id="employee-blocks" class="content">
 
     {% for employee in page.employees %}
-    <div class="employee-block">
-      <div class="employee-block-header">
-        <h3 class="employee-header-content">{{employee.title}} {{ employee.name }}</h3>
-      </div> <!-- closing info-block-header -->
-      <div class="employee-block-body">
-        <div class="employee-body-content">
+      <div class="employee-block">
+        <div class="employee-block-header">
+          <h3 class="employee-header-content">{{employee.title}} {{ employee.name }}</h3>
+        </div> <!-- closing info-block-header -->
+          <div class="employee-block-body">
+              <div class="employee-body-content">
 
-          <img class="portrait" src="{{ employee.portrait }}" alt="{{ employee.name }}" />
-          <table class="employee-table">
-            <tbody class="employee-table-body">
-              {% for table_entry in employee.table-entries %}
-              <tr class="employee-entry">
-                {% assign key = table_entry[0] %}
-                {% assign value = table_entry[1] %}
-
-                {% if key != "" %}
-                <td class="employee-key">{{ key }}</td>
-                {% endif %}
-                {% if value != "" %}
-                <td class="employee-value">{{ value }}</td>
-                {% endif %}
-              </tr>
-              {% endfor %}
-            </tbody>
-          </table>
-        </div> <!-- closing info-body-content -->
-      </div> <!-- closing info-block-body -->
-    </div>
+                <img class="portrait" src="{{ employee.portrait }}" alt="{{ employee.name }}" />
+                <table class="employee-table">
+                  <tbody class="employee-table-body">
+                    {% for table_entry in employee.table-entries %}
+                      <tr class="employee-entry">
+                        {% assign key = table_entry[0] %}
+                        {% assign value = table_entry[1] %}
+                        
+                          {% if key != "" %}
+                            <td class="employee-key">{{ key }}</td>
+                          {% endif %}
+                          {% if value != "" %}
+                            <td class="employee-value">{{ value }}</td>
+                          {% endif %}
+                      </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              </div> <!-- closing info-body-content -->
+          </div> <!-- closing info-block-body -->
+      </div>
     {% endfor %}
 
   </div> <!-- closing info-blocks-->

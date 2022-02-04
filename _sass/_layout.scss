@@ -2,7 +2,6 @@
 
 	--info-block-width: 25em;
 	
-	--appointment-block-body-height: 66em;
 	--employee-block-body-height: 66em;
 	--info-block-body-height: 25em;
 	--info-block-body-font-size: 1.3em;
@@ -66,6 +65,5 @@
 @import 'layout/current';
 @import 'layout/main';
 @import 'layout/team';
-@import 'layout/appointments';
 @import 'layout/gallery';
 @import 'layout/footer';
