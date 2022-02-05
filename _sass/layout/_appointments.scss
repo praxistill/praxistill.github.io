@@ -1,0 +1,89 @@
+/* MAIN */
+
+#appointment-blocks {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.appointment-block {
+	
+	margin-bottom: 2.5em;
+	margin-top: 2.5em;
+	margin-left: 1em;
+	margin-right: 1em;
+    height: 48em;
+}
+
+%appointment-block-layout {
+
+	box-sizing: border-box;
+	padding: var(--info-block-padding) var(--info-block-padding) var(--info-block-padding) var(--info-block-padding);
+	width: 30em;// var(--info-block-width);
+}
+
+.appointment-block-header {
+
+	@extend %appointment-block-layout;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	margin: 0em 0em 0.5em 0em;
+	height: var(--info-block-header-height);
+
+}
+
+.appointment-block-body {
+
+	@extend %appointment-block-layout;
+
+	margin: 0em 0em 0em 0em;
+	// height: 50em; // var(--info-block-body-height);
+	// height: var(--info-block-body-height);
+}
+
+#appointment-block-map {
+	padding: 0em 0em 0em 0em;
+}
+
+.appointment-body-content {
+    // height: 22em;
+}
+
+.appointment-header-content {
+}
+
+/* INFO TABLE */
+
+.appointment-table {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.appointment-table-body {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.appointment-entry {
+	display: flex;
+	flex-direction: column;
+}
+
+.appointment-key {
+	align-self: flex-start;
+
+}
+
+.appointment-value {
+	align-self: flex-start;
+    margin-left: 2em;
+
+}
