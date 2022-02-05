@@ -13,7 +13,7 @@
 	margin-top: 2.5em;
 	margin-left: 1em;
 	margin-right: 1em;
-    height: 0em;
+    height: 48em;
 }
 
 %appointment-block-layout {
@@ -41,7 +41,7 @@
 	@extend %appointment-block-layout;
 
 	margin: 0em 0em 0em 0em;
-	// height: var(--info-block-body-height);
+	// height: 50em; // var(--info-block-body-height);
 	// height: var(--info-block-body-height);
 }
 
