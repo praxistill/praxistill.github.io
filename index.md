@@ -5,7 +5,7 @@ layout: home
 date: 2021-01-03 9:00:00 +0100
 
 current:
-  content: "Aufgrund der Covid-19-Pandemie haben wir unsere telefonische Erreichbarkeit erhöht<br>und nehmen zudem Rezeptbestellungen über die mailbox oder per E-Mail an"
+  content: "Liebe Patienten,<br>für einen rebungsloseren Betriebsablauf, sowohl für Sie als auch für uns als Praxisteam, können wir<br><b>Patienten ohne Termin nur noch bis 10:30 Uhr annehmen.</b> Wir danken für Ihr Verständnis.<br>Ihr Team der Praxis Hermes"
 
 info-blocks:
 
