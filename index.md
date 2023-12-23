@@ -5,7 +5,7 @@ layout: home
 date: 2021-01-03 9:00:00 +0100
 
 current:
-  content: "Liebe Patienten,<br>für einen reibungsloseren Betriebsablauf, sowohl für Sie als auch für uns als Praxisteam, können wir<br><b>Patienten ohne Termin nur noch bis 10:30 Uhr annehmen.</b> Wir danken für Ihr Verständnis.<br>Ihr Team der Praxis Hermes"
+  content: "Liebe Patienten,<br>für einen reibungsloseren Betriebsablauf, sowohl für Sie als auch für uns als Praxisteam, können wir<br><b>Patienten ohne Termin nur noch bis 10:00 Uhr annehmen.</b> Wir danken für Ihr Verständnis.<br>Ihr Team der Praxis Hermes"
 
 info-blocks:
 
