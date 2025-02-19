@@ -5,6 +5,22 @@
 	opacity: color(default, info-block, opacity);
 }
 
+.notification-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center; /* Zentriert das Element im Grid */
+  background-color: color(default, info-block, background-color);
+  border: 1px solid #91d5ff;
+  color: color(default, base, secondary);
+  padding: 20px;
+  text-align: center;
+  font-size: font(default, heading-info-block, size);
+  margin: 40px auto;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
 .appointment-block {
 	@include box-shadow(color(default, info-block, box-shadow));
